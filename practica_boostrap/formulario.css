@@ -1,0 +1,168 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(81, 163, 240);
+    height: 100vh;   
+    display: flex;
+    justify-content: center; /* centra horizontal */
+    /*align-items: center; /* centra vertical */
+    min-height: 370vh; /* altura completa de la ventana */
+    margin: 5 ; /* quitar márgenes por defecto */
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+div{
+    display: grid;
+    justify-items: center;
+}
+
+.formulario{ 
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color:rgb(211, 40, 40);
+    padding: 60px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px;      
+    margin: auto;
+}
+main{
+    background-color:rgb(111, 112, 112);
+    justify-content: center;
+    align-items: center;
+    width: 800px;
+    background: #f2f2f2;
+    padding: 10px;
+    text-align: center;   
+}
+
+h1{
+    text-align: center;
+    color: rgb(40, 9, 177);
+    margin-bottom: 15px;
+}
+
+label{
+    font-size: 14px;
+    margin-bottom: 8px;
+    display: block;
+    color: rgb(0, 0, 0);
+}
+
+input, textarea{
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 3px solid #f88e03;
+    border-radius: 4px;
+    box-sizing: border-box; /* Asegura que el padding y el border se incluyan en el ancho total */
+}
+
+input:focus, textarea:focus{
+    border-color: #5ef805;
+}
+
+button{
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 4px;
+    background-color: #e7c6e7; ;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Estilos generales para la tabla */
+table {
+    width: 40%; /* Ocupa el 80% del ancho del contenedor */
+    margin: 20px auto; /* Centra la tabla y le da un margen superior/inferior */
+    border-collapse: collapse; /* Combina los bordes de las celdas */
+    font-family: Arial, sans-serif;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+/* Estilos para el encabezado y las celdas de datos */
+th, td {
+    border: 1px solid #c07b7b; /* Borde gris suave */
+    padding: 10px; /* Espaciado interno */
+    text-align: center; /* Alineación del texto a la izquierda */
+}
+
+/* Estilos específicos para el encabezado de la tabla */
+thead th {
+    background-color: #ffee00; /* Fondo azul */
+    color: rgb(10, 10, 10); /* Texto blanco */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Estilos para las filas de datos */
+tbody tr:nth-child(odd) {
+    /* Fondo para filas pares (para efecto de "cebra") */
+    background-color: #a1defa;
+}
+
+tbody tr:nth-child(even) {
+    /* Cambio de color al pasar el ratón por encima */
+    background-color: #a0df8d;
+    cursor: pointer;
+}
+
+/* Alineación especial para la columna de precio */
+tbody tr td:nth-child(3) {
+    text-align: right;
+    font-weight: bold;
+    color: #28a745; /* Color verde para precios */
+}
+
+tfoot tr {
+  background-color: #e97676; /* color de fondo */
+  color: #070707; /* color de texto */
+  font-weight: bold;
+  text-align: center;
+}
+
+tfoot td {
+  padding: 10px; /* espacio interno */
+}
+
+p, h2 {
+    margin-bottom: 1em; /* Espacio inferior para los párrafos */
+    text-align: center; /* Alinea el texto justificado */
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #8b8b8b;
+    color: white;
+    position: content;
+    bottom: 100;
+    width: 100%;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.btn-volver {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.btn-volver:hover {
+    background-color: #217dbb;
+}
+.check-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px; /* espacio entre ellos */
+}

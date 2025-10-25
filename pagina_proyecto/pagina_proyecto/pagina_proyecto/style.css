@@ -1,0 +1,308 @@
+/* --- RESETEO GENERAL --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    /* Define la fuente que ya elegiste para que todo se vea bien */
+    font-family: 'Open Sans', sans-serif; 
+
+    /* ESTILO DEL FONDO (BACKGROUND) */
+
+    /* Degradado lineal que va de un azul cielo muy claro (casi blanco) a un verde agua muy suave */
+    background: linear-gradient(180deg, #f0fff0 50%, #e0f2f1 100%);
+    
+    /* Asegura que el degradado cubra toda la altura de la página */
+    min-height: 100vh;
+    background-attachment: fixed; /* Mantiene el fondo fijo al hacer scroll */
+}
+
+/* --- CABECERA Y TITULO --- */
+header {
+    position: relative;
+    text-align: center;
+    padding-top: 10px;
+}
+
+header h1 {
+    color: #f7f7f7; /* verde oscuro */
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* --- NAVBAR --- */
+.navbar {
+    margin-top: 5px;
+    position: relative;
+    z-index: 10;
+    background-color: #e0cd82 !important; /* tono cálido */
+}
+
+/* Evitar que las palabras se atenúen */
+.navbar-nav .nav-link {
+    color: #000 !important; /* texto siempre negro */
+    font-weight: 500;
+    transition: color 0.2s ease-in-out;
+}
+
+/* Cambiar color al pasar el mouse */
+.navbar-nav .nav-link:hover {
+    color: #50c884 !important; /* verde oscuro al pasar */
+}
+
+/* Evitar el cambio de color al estar "active" */
+.navbar-nav .nav-link.active {
+    color: #000 !important;
+    font-weight: 600;
+}
+
+/* --- BANNERS LATERALES --- */
+.banner-left,
+.banner-right {
+    position: fixed;
+    top: 80px; /* altura desde el borde superior */
+    width: 120px;
+    height: 400px;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.banner-left {
+    left: 10px;
+}
+
+.banner-right {
+    right: 10px;
+}
+
+.banner-left img,
+.banner-right img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+/* --- CUERPO PRINCIPAL --- */
+body {
+    padding-left: 150px;
+    padding-right: 150px;
+    }
+
+/* --- RESPONSIVE DESIGN --- */
+@media (max-width: 992px) {
+    /* En pantallas medianas (tablets) */
+    body {
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+
+    .banner-left,
+    .banner-right {
+        width: 80px;
+        height: 300px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    /* En celulares: ocultar banners laterales */
+    .banner-left,
+    .banner-right {
+        display: none;
+    }
+
+    body {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+        margin-top: 10px;
+    }
+}
+p{
+    text-align: justify;    
+}
+
+
+/* Título principal */
+h2,h1,h3,h4 {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    color: #0d6efd;
+    
+}
+
+/* Texto introductorio */
+p.intro {
+    text-align: justify;
+    max-width: 900px;
+    margin: 0 auto 30px;
+    color: #555;
+}
+
+/* Estilos de las tarjetas */
+.card {
+    border-radius: 19px;
+    overflow: hidden;
+    box-shadow: 0 5px 8px rgba(235, 95, 3, 0.1);
+    margin-bottom: 25px;
+    border-color: rgb(0, 72, 228);
+}
+
+.card img {
+    height: 380px;
+    object-fit: cover;
+}
+
+/* Contenido de la tarjeta */
+.card-body h5 {
+    color: #004d40;
+    font-weight: bold;
+}
+
+.card-body p {
+    color: #333;
+    text-align: justify;
+}
+
+
+.lluvia {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.gota {
+    position: absolute;
+    top: -100px;
+    width: 50px;
+    animation: caer 5s linear infinite;
+}
+
+/* Animas las imágenes cayendo */
+@keyframes caer {
+    0% {
+        transform: translateY(-100px) rotate(0deg);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(110vh) rotate(360deg);
+        opacity: 0.8;
+    }
+}
+
+/* Distintas posiciones y tiempos */
+.gota:nth-child(1) {
+    left: 10%;
+    animation-delay: 1s;
+}
+
+.gota:nth-child(2) {
+    left: 30%;
+    animation-delay: 2s;
+}
+
+.gota:nth-child(3) {
+    left: 50%;
+    animation-delay: 3s;
+}
+
+.gota:nth-child(4) {
+    left: 70%;
+    animation-delay: 3s;
+}
+
+.gota:nth-child(5) {
+    left: 90%;
+    animation-delay: 4s;
+}
+html {
+    scroll-behavior: smooth;
+}
+footer a:hover {
+    text-decoration: underline;
+    color: #0a0a0a;
+}
+
+footer hr {
+    border-top: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    /* Usa el mismo degradado de la página principal */
+    background: linear-gradient(180deg, #81c181 0%, #e0f2f1 100%); 
+    
+    color: #333333; 
+    padding: 20px 0;
+}
+#calculadora {
+    max-width: 600px;
+    
+}
+
+#resultado {
+    font-size: 1.2rem;
+}
+
+.logo-tit {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #145a32;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+#resultado strong {
+    color: #49e06c;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@700&display=swap');
+
+/* APLICACIÓN DE LAS FUENTES */
+/* -------------------------- */
+
+body {
+    /* Fuente principal para el texto del cuerpo */
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    /* Aplicar el fondo degradado que discutimos para la estética */
+    background: linear-gradient(180deg, #f0fff0 0%, #e0f2f1 100%);
+    min-height: 100vh;
+    background-attachment: fixed; 
+}
+
+/* Aplicación de fuentes y estilos estéticos a las clases que usamos en el HTML */
+
+/* Estilo para Títulos */
+h1, h2, h3, .card-title, .titulo-seccion-fotovoltaica {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: #00796b; /* Un verde oscuro fuerte para los títulos */
+}
+
+/* Estilo para el Texto de Párrafo de la Tarjeta */
+.texto-fotovoltaica {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400; /* Normal */
+    color: #333; /* Un gris oscuro para buena legibilidad */
+}
+
+/* Estilo para el Contenedor de las Tarjetas (Fondo y sombra) */
+.seccion-fotovoltaica-estetica {
+    background-color: #e0f2f1; /* Verde menta claro */
+    border: 1px solid #b2dfdb; 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); 
+}

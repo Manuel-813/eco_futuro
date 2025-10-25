@@ -1,0 +1,11 @@
+.carousel-item img {
+    height: 80%; /* Ajusta la altura según tus necesidades */
+    object-fit: cover; /* Asegura que la imagen cubra el contenedor sin distorsionarse */
+    /*object-fit: contain;  Asegura que la imagen se ajuste dentro del contenedor sin recortarse */
+    /*object-fit: fill;  La imagen se estira para llenar el contenedor, puede distorsionarse */
+}
+
+a{
+    text-decoration: none;
+    color: rgb(96, 8, 94);
+}

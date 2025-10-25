@@ -1,0 +1,115 @@
+/*p{color: red; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif}*/
+/*h1,h2, h3{color: green; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}*/
+
+/* Estilos generales del cuerpo de la página */
+body {
+
+    font-family: Arial, sans-serif; /* Cambia la fuente */
+    margin: 5; /* Elimina el margen predeterminado del navegador */
+    padding: 30px 15px; /* Elimina el relleno predeterminado */
+    background-color: #f4f4f4; /* Un color de fondo suave */
+    color: #333; /* Color de texto general */
+    line-height: 1.6; /* Espaciado entre líneas */
+}
+
+
+/* Estilos para el encabezado de la página */
+header {
+    background-color: #ff8800; /* Fondo oscuro para el encabezado */
+    color: #fff; /* Texto blanco */
+    padding: 30px; /* Relleno superior e inferior */
+    text-align: center; /* Centra el texto */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Sombra sutil */
+}
+
+aside {
+    width: 300px;
+    height: 100%;
+    background-color: #ffcc80; /* Fondo oscuro para el encabezado */
+    color: #000; /* Texto blanco */
+    padding: 20px; /* Relleno superior e inferior */
+    text-align: center; /* Centra el texto */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Sombra sutil */   
+}
+
+section {
+    background-color: #000000; /* Fondo oscuro para el encabezado */
+    color: #fff; /* Texto blanco */
+    padding: 30px ; /* Relleno superior e inferior */
+    text-align: center; /* Centra el texto */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Sombra sutil */
+}
+
+header h1 {
+    margin: 0; /* Elimina el margen predeterminado del h1 */
+    font-size: 2.5em; /* Tamaño de fuente más grande */
+}
+
+/* Estilos para el contenido principal */
+main {
+    margin: 20px auto; /* Centra el contenido y añade margen */
+    padding: 20px; /* Relleno interno */
+    background-color: #fff; /* Fondo blanco para el contenido */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1); /* Sombra para el contenedor principal */
+    display:flex:;
+}
+
+/* Estilos para los párrafos */
+p {
+    margin-bottom: 1em; /* Espacio inferior para los párrafos */
+    text-align: justify; /* Alinea el texto justificado */
+}
+
+/* Estilos para los encabezados h2 */
+
+h2 {
+    color: #007bff; /* Color azul para h2 */
+    border-bottom: 2px solid #007bff; /* Línea inferior */
+    padding-bottom: 5px; /* Espacio debajo de la línea */
+    margin-top: 30px; /* Margen superior */
+}
+
+/* Estilos para los encabezados h3 */
+h3,h6 {
+    color: #28a745; /* Color verde para h3 */
+    margin-top: 25px;
+}
+
+/* Estilos para la lista desordenada */
+ul {
+    list-style-type: square; /* Cambia el tipo de viñeta a cuadrado */
+    margin-left: 20px; /* Margen a la izquierda para indentar */
+    padding-left: 0;
+}
+
+ul li {
+    padding: 5px 0; /* Relleno vertical para cada elemento de la lista */
+    border-bottom: 1px dotted #ccc; /* Línea punteada entre elementos */
+}
+
+ul li:last-child {
+    border-bottom: none; /* No hay línea en el último elemento */
+}
+
+
+/* Estilos para los enlaces */
+a {
+    color: #007bff; /* Color azul para los enlaces */
+    text-decoration: none; /* Elimina el subrayado predeterminado */
+}
+
+a:hover {
+    text-decoration: underline; /* Subrayado al pasar el ratón */
+    color: #0056b3; /* Color más oscuro al pasar el ratón */
+}
+
+/* Estilos para el pie de página */
+footer {
+    text-align: center; /* Centra el texto */
+    padding: 30px; /* Relleno */
+    background-color: #333; /* Fondo oscuro */
+    color: #fff; /* Texto blanco */
+    margin-top: 30px; /* Margen superior */
+    font-size: 0.9em; /* Tamaño de fuente ligeramente más pequeño */
+}

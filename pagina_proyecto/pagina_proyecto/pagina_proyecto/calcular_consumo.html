@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>⚡EcoFuturo🌲</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <header>
+            <a href="pagina_principal.html" class="text-decoration-none">
+        <h1 class="logo-tit">
+            <img src="logo.jpg" alt="Energía Solar" width="80" height="80" class="img-fluid rounded-4"> 
+            EcoFuturo⚡
+        </h1>
+    </a>
+
+<!-- Banner izquierdo -->
+        <div class="banner-left">
+            <div id="carouselLeft" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="3000">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <a href="" target="_blank">
+                            <img src="gettyimages-1014069344-612x612.jpg"
+                                class="d-block w-100 rounded shadow" alt="Publicidad 1">
+                        </a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="" target="_blank">
+                            <img src="gettyimages-1447692384-612x612.jpg"
+                                class="d-block w-100 rounded shadow" alt="Publicidad 2">
+                        </a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="" target="_blank">
+                            <img src="gettyimages-1493545741-612x612.jpg"
+                                class="d-block w-100 rounded shadow" alt="Publicidad 3">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Banner derecho -->
+        <div class="banner-right">
+            <div id="carouselRight" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="3500">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <a href="" target="_blank">
+                            <img src="gettyimages-2162525200-612x612.jpg"
+                                class="d-block w-100 rounded shadow" alt="Publicidad 4">                            
+                        </a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="" target="_blank">
+                            <img src="istockphoto-1282808136-612x612.jpg"
+                                class="d-block w-100 rounded shadow" alt="Publicidad 5">
+                        </a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="" target="_blank">
+                            <img src="images.jpeg"
+                                class="d-block w-100 rounded shadow" alt="Publicidad 5">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="ventajas py-5">
+<section id="calculadora" class="container my-5 p-4 bg-light rounded shadow">
+    <h2 class="text-center text-success mb-4">Calcula tu ahorro con energía solar ☀️</h2>
+    <p class="text-center">Ingresa tu consumo mensual promedio en kWh y descubre cuántos paneles solares necesitas y
+        cuánto podrías ahorrar 💰</p>
+
+    <form id="formConsumo" class="text-center">
+        <div class="mb-3">
+            <label for="consumo" class="form-label fw-bold">Consumo mensual (kWh):</label>
+            <input type="number" id="consumo" class="form-control w-50 mx-auto" placeholder="Ejemplo: 350" required>
+        </div>
+        <button type="submit" class="btn btn-success">Calcular</button>
+    </form>
+
+    <div id="resultado" class="alert alert-info mt-4 text-center" style="display:none;"></div>
+</section>
+
+
+        </section>
+        <div class="text-center mt-4">
+            <a href="pagina_principal.html" class="btn btn-success">
+                <i class=""></i> Atrás
+            </a>
+        </div>
+
+        
+
+
+
+    </header>
+
+    <footer class="text-dark text-center mt-5 p-4 shadow">
+        <div class="container">
+            <div class="row">
+                <!-- Columna 1 -->
+                <div class="col-lg-3 col-md-6 mb-3">
+                    <h5 class="fw-bold">🌱 EcoFuturo</h5>
+                    <p>
+                        Promovemos el uso de energías limpias para construir un futuro sostenible.
+                        ¡Descubre, aprende y actúa por el planeta!
+                    </p>
+                </div>
+    
+                <!-- Columna 2 -->
+                <div class="col-lg-4 col-md-6 mb-4 mx-auto">
+                    <h5 class="fw-bold">Enlaces útiles</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#que-son" class="text-dark text-decoration-none">¿Qué son?</a></li>
+                        <li><a href="energia_solar.html" class="text-dark text-decoration-none">Energía Solar</a></li>
+                        <li><a href="beneficios_retos.html" class="text-dark text-decoration-none">Beneficios y Retos</a>
+                        </li>
+                        <li><a href="#" class="text-dark text-decoration-none">Calcula tu consumo</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Columna 3 -->
+                <div class="col-lg-4 col-md-12 mb-4 mx-auto text-center">
+                    <h5 class="fw-bold">Contáctanos</h5>
+                    <p class="mb-1 text-center"><i class="bi bi-envelope"></i> <a href="mailto:contacto@ecofuturo.com"
+                            class="text-dark text-decoration-none">contacto@ecofuturo.com</a></p>
+                    <p class="mb-1 text-center"><i class="bi bi-telephone"></i> <a href="tel:+573001234567"
+                            class="text-dark text-decoration-none">+57 300 123 4567</a></p>
+                    <p class="mb-0 text-center"><i class="bi bi-whatsapp"></i> <a href="https://wa.me/573001234567" target="_blank"
+                            class="text-dark text-decoration-none">WhatsApp disponible</a></p>
+                </div>
+    
+            
+            <p class="mb-0 text-center">
+                © 2025 <strong>EcoFuturo</strong>. Todos los derechos reservados. 🌞
+            </p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous">
+    </script>
+    <script src="calcular.js"></script>
+
+    <script>
+        document.getElementById("formConsumo").addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            const consumo = parseFloat(document.getElementById("consumo").value);
+
+            if (isNaN(consumo) || consumo <= 0) {
+                alert("⚠️ Por favor ingresa un valor válido en kWh.");
+                return;
+            }
+
+            // Valores base (puedes modificarlos según tu región)
+            const produccionPorPanel = 30; // kWh/mes
+            const costoPorKWh = 700; // en COP
+
+            // Cálculos
+            const panelesNecesarios = Math.ceil(consumo / produccionPorPanel);
+            const ahorroMensual = consumo * costoPorKWh;
+            const energiaSolarGenerada = panelesNecesarios * produccionPorPanel;
+
+            // Mostrar resultados
+            const resultado = document.getElementById("resultado");
+            resultado.style.display = "block";
+            resultado.innerHTML = `
+            🌞 Tu consumo actual es de <strong>${consumo} kWh/mes</strong>.<br>
+            ⚙️ Necesitarías aproximadamente <strong>${panelesNecesarios}</strong> paneles solares para cubrir ese consumo.<br>
+            ⚡ Generarías cerca de <strong>${energiaSolarGenerada} kWh</strong> de energía limpia cada mes.<br>
+            💰 Estarías ahorrando alrededor de <strong>$${ahorroMensual.toLocaleString("es-CO")}</strong> mensuales en tu factura eléctrica.
+        `;
+        });
+    </script>
+
+    
+</body>
+
+</html>
